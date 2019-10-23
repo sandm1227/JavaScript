@@ -30,4 +30,6 @@
 > 9. **git clean -xf**     删除当前目录下所有没有track过的文件。不管它是否是.gitignore文件里面指定的文件夹和文件
 > 10. **git log**        查看当前版本及之前的commit记录  
 > 11. **git reflog**      HEAD的变更记录
-> 12.**git reset --hard 版本号**     回退到指定版本号的版本，该版本之后的修改都被删除。同时也是通过这个命令回到最新版本。需要reflog配合
+> 12. **git reset --hard 版本号**     回退到指定版本号的版本，该版本之后的修改都被删除。同时也是通过这个命令回到最新版本。需要reflog配合
+> 13. **git remote -v**    查看远程资源
+> 14. **git remote set-url origin xxxxxx**    添加远程资源到记录中
