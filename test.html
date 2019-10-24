@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            var obj = {
+                a: 1,
+                b: [1, 2, 3],
+                c: {
+                    d: 2,
+                    e: [{
+                        id: 1,
+                        name: '数据1'
+                    }, {
+                        id: 2,
+                        name: '数据2'
+                    }],
+                    f: {
+                        id: 22,
+                        name: 222
+                    }
+                },
+                g: undefined,
+                h: null
+            }
+            // function depClone(source) {
+            //     if(!source || typeof source !== 'object') {
+            //         return source
+            //     }
+
+            //     let tmp;
+            //     if(source instanceof Array) {
+            //         tmp = []
+            //         for(let i = 0; i < source.length; i++) {
+            //             tmp[i] = depClone(source[i])
+            //         }
+            //     } else {
+            //         tmp = {}
+            //         for(let k in source) {
+            //             tmp[k] = depClone(source[k])
+            //         }
+            //     }
+            //     return tmp;
+            // }
+            function depClone(source) {
+                if(!source || typeof source !== 'object') {
+                    return source
+                }
+                let tmp = source instanceof Array ? [] : {};
+                for(item in source) {
+                    tmp[item] = typeof source[item] === 'object' ? depClone(source[item]) : source[item]
+                }
+                return tmp;
+            }
+            const result = depClone(obj);
+            console.log(result)
+            console.log({}.toString())
+            console.log([].toString())
+        </script>
+    </body>
+</html>
