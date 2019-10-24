@@ -23,39 +23,29 @@
                 g: undefined,
                 h: null
             }
-            // function depClone(source) {
-            //     if(!source || typeof source !== 'object') {
-            //         return source
-            //     }
+            
+            function getResult(obj, keys) {
+                let tmp = {};
+                for(let i = 0; i < keys.length; i++) {
+                    getNewRes(obj, keys[i])
+                }
+    
+                function getNewRes(source, key) {
+                    if(source.hasOwnProperty(key)) {
+                        tmp[key] = typeof source[key] === 'object' ? depClone(source[key]) : source[key]
+                    } else {
+                        for (let item in source) {
+                            if(typeof source[item] === 'object') {
+                                getNewRes(source[item], key)
+                            }
+                        }
+                    }
+                }
 
-            //     let tmp;
-            //     if(source instanceof Array) {
-            //         tmp = []
-            //         for(let i = 0; i < source.length; i++) {
-            //             tmp[i] = depClone(source[i])
-            //         }
-            //     } else {
-            //         tmp = {}
-            //         for(let k in source) {
-            //             tmp[k] = depClone(source[k])
-            //         }
-            //     }
-            //     return tmp;
-            // }
-            function depClone(source) {
-                if(!source || typeof source !== 'object') {
-                    return source
-                }
-                let tmp = source instanceof Array ? [] : {};
-                for(item in source) {
-                    tmp[item] = typeof source[item] === 'object' ? depClone(source[item]) : source[item]
-                }
                 return tmp;
             }
-            const result = depClone(obj);
-            console.log(result)
-            console.log({}.toString())
-            console.log([].toString())
+            const res = getResult(obj, ['id']);
+            console.log('res===> ', res)
         </script>
     </body>
 </html>
