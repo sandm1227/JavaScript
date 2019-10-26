@@ -3,97 +3,9 @@
     <head></head>
     <body>
         <script>
-            var obj = {
-                a: 1,
-                b: [1, 2, 3],
-                c: {
-                    d: 2,
-                    e: [{
-                        id: 1,
-                        name: '数据1'
-                    }, {
-                        id: 2,
-                        name: '数据2'
-                    }],
-                    f: {
-                        id: 22,
-                        name: 222,
-                        address: [{
-                            cname: 'xxx2',
-                            ename: 'xxx1',
-                            children: [{
-                                cname: 'xxx',
-                                ename: 'xxx'
-                            }]
-                        }]
-                    }
-                },
-                g: undefined,
-                h: null
-            }
+
             
-            function depClone(source) {
-                if(!source || typeof source !== 'object') {
-                    return source
-                }
-                let result = source instanceof Array ? [] : {}
-                for(let i in source) {
-                    result[i] = typeof source === 'object' ? depClone(source[i]) : source[i]
-                }
-                return result
-            }
-
-            // function getResult(obj, keys) {
-            //     let tmp = [];
-            //     for(let i = 0; i < keys.length; i++) {
-            //         if(typeof obj === 'object') {
-            //             getNewRes(obj, keys[i], i)
-            //         }
-            //     }
-    
-            //     function getNewRes(source, key, i) {
-            //         if(source instanceof Object && source.hasOwnProperty(key)) {
-            //             const res = typeof source[key] === 'object' ? depClone(source[key]) : source[key]
-            //             if(!tmp[i]) {
-            //                 tmp[i] = [res]
-            //             } else {
-            //                 tmp[i].push(res)
-            //             }
-            //         } else {
-            //             for (let item in source) {
-            //                 if(typeof source[item] === 'object') {
-            //                     getNewRes(source[item], key, i)
-            //                 }
-            //             }
-            //         }
-            //     }
-
-            //     return tmp;
-            // }
-            function getResult(obj, keys) {
-                let tmp = [];
-                for(let i = 0; i < keys.length; i++) {
-                    if(typeof obj === 'object') {
-                        getKey(obj, keys[i], i)
-                    }
-                }
-                function getKey(source, key, i) {
-                    if(source instanceof Object && source.hasOwnProperty(key)) {
-                        const res = typeof source[key] === 'object' ? depClone(source[key]) : source[key];
-                        if(!tmp[i]) {
-                            tmp[i] = []
-                        } 
-                        tmp[i].push(res)
-                    } else {
-                        for(let k in source) {
-                            getKey(source[k], key, i)
-                        }
-                    }
-                }
-                
-                return tmp;
-            }
-            const res = getResult(obj, ['id', 'f']);
+            const res = getResult(101);
             console.log('res===> ', res)
         </script>
     </body>
