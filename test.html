@@ -3,25 +3,15 @@
     <head></head>
     <body>
         <script>
-  console.log('start');
-setTimeout(() => {
-    console.log('children2')
-    Promise.resolve().then(() => {
-        console.log('children3')
-    })
-},0)
-new Promise(function(resolve, reject){
-    console.log('children4');
-    setTimeout(function() {
-        console.log('children5');
-        resolve('children6')
-    }, 0)
-}).then((res) => {
-    console.log('children7');
-    setTimeout(() => {
-        console.log(res);
-    }, 0)
-})
+            function flatten(arr) {
+                return arr.reduce((res, cur, index) => {
+                    return res.concat(Array.isArray(cur) ? flatten(cur) : cur)
+                }, [])
+            }
+            const res = flatten([1, [2, [3, [5, 6]]]])
+            console.log(res)
+            var arr = [1, 2, [3, [4, [5, [6, 7]]]]]
+            console.log(arr.flat(Infinity))
         </script>
     </body>
 </html>
