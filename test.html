@@ -3,18 +3,11 @@
     <head></head>
     <body>
         <script>
-            var arr = [1,1,2,2,3,4, 7, 7]
-            function distinct(arr) {
-                return arr.reduce((res, cur, index) => {
-                    if(res.indexOf(cur) === -1) {
-                        res.push(cur)
-                    }
-                    return res
-                }, [])
-            }
-            console.log(distinct(arr))
-            let res = arr.some(item => item === 3)
-            console.log(res)
+            var arr = [1,2,3]
+            const ll = arr.reduce((res, cur) => {
+                return res > cur ? res : cur
+            })
+            console.log(ll)
         </script>
     </body>
 </html>
