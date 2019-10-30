@@ -3,15 +3,16 @@
     <head></head>
     <body>
         <script>
-            function flatten(arr) {
+            var arr = [1,1,2,2,3,4, 7, 7]
+            function distinct(arr) {
                 return arr.reduce((res, cur, index) => {
-                    return res.concat(Array.isArray(cur) ? flatten(cur) : cur)
+                    if(res.indexOf(cur) === -1) {
+                        res.push(cur)
+                    }
+                    return res
                 }, [])
             }
-            const res = flatten([1, [2, [3, [5, 6]]]])
-            console.log(res)
-            var arr = [1, 2, [3, [4, [5, [6, 7]]]]]
-            console.log(arr.flat(Infinity))
+            console.log(distinct(arr))
         </script>
     </body>
 </html>
