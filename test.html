@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <style type="text/css">
+            .left{
+                width: 100px;
+                float:left;
+            }
+            .center{
+                margin-left: 100px;
+                margin-right: 100px;
+            }
+            .right{
+                width: 100px;
+                float: right;
+            }
+        </style>
+    </head>
     <body>
+        <div class="left">left</div>
+        
+        <div class="right">right</div>
+        <div class="center">center</div>
+
+
         <script>
-            var arr = [5,4,6,7,2,1]
-            function insertSort(arr) {
-    for(let i = 1; i < arr.length; i++) {
-        let j = i;
-        let target = arr[j];
-        while(j > 0 && arr[j - 1] > target) {
-            arr[j] = arr[j - 1];
-            j--
-        }
-        arr[j] = target
-    }
-    return arr
-} 
-            console.log(insertSort(arr))
         </script>
     </body>
 </html>
