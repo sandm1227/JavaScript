@@ -2,25 +2,32 @@
 <html>
     <head>
         <style type="text/css">
+            .all{
+                position: relative;
+            }
             .left{
+                position: absolute;
                 width: 100px;
-                float:left;
+                left: 0;
             }
             .center{
-                margin-left: 100px;
-                margin-right: 100px;
+                position: absolute;
+                left: 100px;
+                right: 100px;
             }
             .right{
+                position: absolute;
                 width: 100px;
-                float: right;
+                right: 0;
             }
         </style>
     </head>
     <body>
-        <div class="left">left</div>
-        
-        <div class="right">right</div>
-        <div class="center">center</div>
+            <div class="all">
+                    <div class="left">left</div>
+                    <div class="center">center</div>
+                    <div class="right">right</div>
+            </div>
 
 
         <script>
