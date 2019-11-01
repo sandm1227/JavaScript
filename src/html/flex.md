@@ -82,6 +82,7 @@
 }
 ````
 ### 项目的属性
+
 * order  
 
 <code>定义项目的排列顺序，默认值为0。值越小，排列越靠前</code>
@@ -90,6 +91,7 @@
     order: <integer>
 }
 ````
+
 * flex-grow  
 
 <code>定义了项目的放大比例，默认值为0，即就算存在多余空间，也不放大</code>
@@ -99,6 +101,7 @@
     flex-grow: <number> /* default 0 */
 }
 ````
+
 * flex-shrink  
 
 <code>定义了项目的缩小比例，默认值为1，即空间不足时，项目自动缩小</code>
@@ -107,6 +110,7 @@
     flex-shrink: <number> /* default 1 */
 }
 ````
+
 * flex-basis  
 
 <code>定义了项目占据主轴的空间（main size），浏览器根据这个属性，计算主轴是否有多余空间。</code>
@@ -117,6 +121,7 @@
     flex-basis: <length> | auto /* default auto */
 }
 ````
+
 * flex  
 
 >1. 是<code>flex-grow</code>，<code>flex-shrink</code>，<code>flex-basis</code>的简写，默认值为<code>0 1 auto</code>后两个属性可选
@@ -127,6 +132,7 @@
     flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 }
 ````
+
 * align-self  
 
 >1. 允许单个项目有与其他项目不一样的对齐方式，可覆盖<code>align-items</code>属性。
