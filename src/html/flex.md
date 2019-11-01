@@ -13,3 +13,14 @@
     display: flex
 }
 ````
+### 容器
+>1. 采用Flex布局的元素，称为Flex容器，简称“容器”；
+>2. 它的所有子元素自动成为容器成员，称为Flex项目（flex item），简称“项目”
+#### 容器的属性
+* flex-direction
+<code>决定项目的排列方向</code>
+````css
+.box {
+    flex-direction: row | row-reverse | column | column-reverse
+}
+````
