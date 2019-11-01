@@ -76,14 +76,14 @@
 }
 ````
 ### 项目的属性
-* order
+* order  
 <code>定义项目的排列顺序，默认值为0。值越小，排列越靠前</code>
 ````css
 .item {
     order: <integer>
 }
 ````
-* flex-grow
+* flex-grow  
 <code>定义了项目的放大比例，默认值为0，即就算存在多余空间，也不放大</code>
 >注意：如果所有项目的<code>flex-grow</code>属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的<code>flex-grow</code>属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍
 ````css
@@ -91,14 +91,14 @@
     flex-grow: <number> /* default 0 */
 }
 ````
-* flex-shrink
+* flex-shrink  
 <code>定义了项目的缩小比例，默认值为1，即空间不足时，项目自动缩小</code>
 ````css
 .item {
     flex-shrink: <number> /* default 1 */
 }
 ````
-* flex-basis
+* flex-basis  
 <code>定义了项目占据主轴的空间（main size），浏览器根据这个属性，计算主轴是否有多余空间。</code>
 <code>它的默认值是auto，即项目本来大小</code>
 > 它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。
@@ -107,7 +107,7 @@
     flex-basis: <length> | auto /* default auto */
 }
 ````
-* flex
+* flex  
 >1. 是<code>flex-grow</code>，<code>flex-shrink</code>，<code>flex-basis</code>的简写，默认值为<code>0 1 auto</code>后两个属性可选
 >2. 该属性有两个快捷键：auto(<code>1 1 auto</code>), nonde(<code>0 0  auto</code>)
 >3. **建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。**
@@ -116,7 +116,7 @@
     flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 }
 ````
-* align-self
+* align-self  
 >1. 允许单个项目有与其他项目不一样的对齐方式，可覆盖<code>align-items</code>属性。
 >2. 默认值是auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch
 ````css
