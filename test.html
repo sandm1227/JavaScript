@@ -2,31 +2,35 @@
 <html>
     <head>
         <style type="text/css">
-            .conatin{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100vh;
-            }
-            .item {
-    position: absolute;
-    width: 20vw;
-    height: 20vw;
-    background: #0f0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-}
+        .contain{
+            display: flex;
+            flex-direction: row;
+            align-items: stretch;
+        }
+        .item1{
+            order: 1;
+            width: 100px;
+            height: 100%;
+            background: #000;
+        }
+        .item2{
+            order: 2;
+            width: 100px;
+            background: #f00;
+        }
+        .item3{
+            order: 3;
+            width: 100px;
+            background: #0f0;
+        }
         </style>
     </head>
     <body>
-          
-                    <diV class="item">内容</div>
-            
-
-
+        <div class="contain">
+            <div class="item1"></div>
+            <div class="item2"></div>
+            <div class="item3"></div>
+        </div>
         <script>
         </script>
     </body>
