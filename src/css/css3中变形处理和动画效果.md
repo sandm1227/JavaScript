@@ -38,5 +38,10 @@ div#box2{
 ````
 
 ##### 3D
+>1. 旋转：rotateX，rotateY，rotateZ，rotate3d(x,y,z,angle)
+> rotate(0,1,0, 120deg)
+>2. 缩放：scaleX，scaleY，scaleZ，scale3d(x,y,z)
+>3. 倾斜：skewX，skewY，skew(x,y)
+>4. 移动：translateX，translateY，translateZ，translate3d(x,y,z)
 
 ## css3中的动画效果
