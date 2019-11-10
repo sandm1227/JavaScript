@@ -45,3 +45,9 @@ div#box2{
 >4. 移动：translateX，translateY，translateZ，translate3d(x,y,z)
 
 ## css3中的动画效果
+>1. transitions 和 animations 都可以通过改变css的属性值来产生动画效果。
+### transitions
+>1. 支持从一个属性值平滑过渡到另一个属性值。
+
+### animations
+>1. 通过关键帧的指定来在页面上产生更复杂的动画效果
