@@ -18,12 +18,25 @@
     background-color: yellow;
     text-align: center;
     margin: 150px auto;
-    // transform: rotate(45deg);
-    // transform: scale(0.5, 2);
-    // transform: skew(50deg, 30deg);
+    /* transform: rotate(45deg); */
+    /* transform: scale(0.5, 2); */
+    /* transform: skew(50deg, 30deg); */
     transform: translate(100px, 20px);
 }
 ````
+##### transform-origin
+>1. transform在进行变形处理时，默认是以元素的<code>中心点</code>为<code>基准点</code>进行变形的
+>2. 使用transform 改变变形的基准点
+````css
+div#box2{
+    width: 200px;
+    height: 200px;
+    background: green;
+    transform: rotate(45deg);
+    transform-origin: left bottom;
+}
+````
+
 ##### 3D
 
 ## css3中的动画效果
