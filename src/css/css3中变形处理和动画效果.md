@@ -1,5 +1,5 @@
 ## css3中的变形处理
-#### transform
+### transform
 >1. 使用transform功能实现文字或图片的旋转，移动，倾斜，缩放这4种类型的变形处理。
 ##### 2D
 >2. 旋转：rotate(45deg)
@@ -24,7 +24,7 @@
     transform: translate(100px, 20px);
 }
 ````
-##### transform-origin
+#### transform-origin
 >1. transform在进行变形处理时，默认是以元素的<code>中心点</code>为<code>基准点</code>进行变形的
 >2. 使用transform 改变变形的基准点
 ````css
@@ -48,6 +48,15 @@ div#box2{
 >1. transitions 和 animations 都可以通过改变css的属性值来产生动画效果。
 ### transitions
 >1. 支持从一个属性值平滑过渡到另一个属性值。
+>2. 概念：在css3中，transitions功能通过将元素的某个属性从一个属性值在指定的时间内平滑过度到另一个属性值来实现动画功能。
+>3. 用法：<code>transition: property duration timing-function</code>
+>4. property: 属性
+>5. duration: 平滑过度需要的时间
+>6. timing-function: 通过什么方法进行平滑过渡
+>7. 三个属性分开写：
+>8. transition-property: background-color
+>9. transition-duration: 1s
+>10. transition-timing-function: linear
 
 ### animations
 >1. 通过关键帧的指定来在页面上产生更复杂的动画效果
