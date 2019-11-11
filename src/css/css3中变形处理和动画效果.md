@@ -58,5 +58,45 @@ div#box2{
 >9. transition-duration: 1s
 >10. transition-timing-function: linear
 
+#### demo
+````html
+<template>
+  <div>
+      <div id="box1" @click="clickFunc"></div>
+      <div class="box2" :class="{'active': isActive}"></div>
+  </div>
+</template>
+````
+````js
+export default {
+  name: 'tes3',
+  data () {
+    return {
+        isActive: false
+    };
+  },
+  methods: {
+      clickFunc() {
+          this.isActive = !this.isActive
+      }
+  }
+}
+````
+````css
+.box2{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    /* transform-origin: left bottom; */
+    /* transition: height 0.3s linear, background-color 0.3s linear, transform 0.3s linear; */
+    transition: all 0.3s linear;
+}
+.active{
+    height: 100px;
+    background-color: orange;
+    transform: rotate(45deg);
+}
+````
+
 ### animations
 >1. 通过关键帧的指定来在页面上产生更复杂的动画效果
