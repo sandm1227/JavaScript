@@ -114,8 +114,33 @@ export default {
 
 #### demo
 ````html
-````
-````js
+<div class="box"></div>
 ````
 ````css
+@keyframes mycolor {
+    0% {
+        background-color: red;
+        transform: rotate(0deg);
+    }
+    40% {
+        background-color:green;
+        transform: rotate(30deg);
+    }
+    70% {
+        background-color: pink;
+        transform: rotate(-30deg);
+    }
+    100% {
+        background-color: red; 
+        transform: rotate(0deg);
+    }
+}
+.box{
+    width: 200px;
+    height: 40px;
+    background-color:orange;
+    &:hover{
+        animation: mycolor 5s linear;
+    }
+}
 ````
