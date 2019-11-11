@@ -49,7 +49,7 @@ div#box2{
 ### transitions
 >1. 支持从一个属性值平滑过渡到另一个属性值。
 >2. 概念：在css3中，transitions功能通过将元素的某个属性从一个属性值在指定的时间内平滑过度到另一个属性值来实现动画功能。
->3. 用法：<code>transition: property duration timing-function</code>
+>3. 用法：<code>transition: property duration timing-function delay</code>
 >4. property: 属性
 >5. duration: 平滑过度需要的时间
 >6. timing-function: 通过什么方法进行平滑过渡
@@ -100,3 +100,22 @@ export default {
 
 ### animations
 >1. 通过关键帧的指定来在页面上产生更复杂的动画效果
+>2. animation-name
+>3. animation-duration
+>4. animation-timing-function
+>5. animation-delay: 延迟多少毫秒或多少秒后开始执行动画
+>6. animation-iteration-count: 用于指定动画的执行次数，可指定infinite（无限次）
+>7. animation-direction: 指定动画的执行方向，可指定的属性值包括：
+* normal: 初始值（动画执行完之后返回初始状态）
+* alternate：交替更改动画的执行方向
+* reverse： 反方向执行动画
+* alternate-reverse：从方向开始，交替更改动画的执行方向
+>8. animation: keyframes的名称 duration timing-function delay animation-iteration-count animation-direction
+
+#### demo
+````html
+````
+````js
+````
+````css
+````
