@@ -7,8 +7,11 @@
 >2. content-box: 默认值
 
 #### 样图
-[content-box](../assets/img-demo1.jpg)
+![content-box](../assets/img-demo1.jpg)
 >3. border-box:
+
+#### 样图
+![border-box](../assets/img-demo2.png)
 
 ## css3中的弹性盒布局
 >1. 参考“flex布局.md”
