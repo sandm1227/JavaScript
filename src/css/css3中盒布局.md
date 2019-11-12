@@ -17,3 +17,36 @@
 
 ## css3中的弹性盒布局
 >1. 参考“flex布局.md”
+* 注意
+>1. 使用盒布局的时候，元素的宽度与高度具有自适应性，即元素的宽度与高度可以根据排列方向的改变而改变
+* flex  ===  flex-grow flex-shrink flex-basis
+>1. 参考 https://developer.mozilla.org/zh-CN/docs/Web/CSS/flex
+* 基础语法
+````css
+/* Basic values */
+flex: auto;
+flex: initial;
+flex: none;
+flex: 2;
+
+/* One value, unitless number: flex-grow */
+flex: 2;
+
+/* One value, width/height: flex-basis */
+flex: 10em;
+flex: 30px;
+
+/* Two values: flex-grow | flex-basis */
+flex: 1 30px;
+
+/* Two values: flex-grow | flex-shrink */
+flex: 2 2;
+
+/* Three values: flex-grow | flex-shrink | flex-basis */
+flex: 2 2 10%;
+
+/* Global values */
+flex: inherit;
+flex: initial;
+flex: unset;
+````
