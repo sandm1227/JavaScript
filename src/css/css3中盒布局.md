@@ -56,4 +56,11 @@ flex-shrink: default 1
 flex-basis: default auto
 
 flex: 250px ===> flex-grow: 1 flex-shrink: 1 flex-basis: 250px;
+
+/* align-content 用于指定多行布局时，各行的一个对齐方式 */
+flex-start
+flex-end
+center
+space-between
+space-around
 ````
