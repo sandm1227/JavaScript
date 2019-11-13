@@ -49,4 +49,11 @@ flex: 2 2 10%;
 flex: inherit;
 flex: initial;
 flex: unset;
+
+/* Three values: flex-grow | flex-shrink | flex-basis */
+flex-grow: default 0
+flex-shrink: default 1
+flex-basis: default auto
+
+flex: 250px ===> flex-grow: 1 flex-shrink: 1 flex-basis: 250px;
 ````
