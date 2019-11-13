@@ -56,11 +56,14 @@ flex-shrink: default 1
 flex-basis: default auto
 
 flex: 250px ===> flex-grow: 1 flex-shrink: 1 flex-basis: 250px;
-
-/* align-content 用于指定多行布局时，各行的一个对齐方式 */
-flex-start
-flex-end
-center
-space-between
-space-around
 ````
+* align-content 用于指定多行布局时，各行的一个对齐方式
+>1. flex-start
+>2. flex-end
+>3. center
+>4. space-between
+>5. space-around
+
+* calc 
+>1. css3中新增的方法，用于计算元素的宽度，高度等数值类型的样式属性值
+>2. calc(50% - 100px) 50%是父容器的50%
