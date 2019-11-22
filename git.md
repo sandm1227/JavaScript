@@ -3,6 +3,9 @@
 > 1. 需要现在github上建立项目
 > 2. 本地配置ssh：ssh-keygen -t rsa -C "xxxxx@qq.com"
 > 3. 需要把邮件地址换成你自己的邮件地址，然后一路回车，使用默认值即可，可以在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人
+> 4. 进入ssh目录：cd ~/.ssh
+> 5. 查看文件： cat id_rsa.pub
+> 6. 将 id_rsa.pub 中的内容添加到github账号的设置的ssh配置那里
 > 4. 测试命令：ssh -T git@github.com
 > 5. 在github的setting中配置: SSH and GPG keys,将id_rsa.pub拷贝到key位置
 
