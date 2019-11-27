@@ -21,6 +21,19 @@
 
 
 ## git相关操作命令
+#### 使用git pull 命令之前，先建立一个.gitignore文件忽略一些文件不提交到服务上（首次就需要建立）
+#### 参考网址： https://blog.csdn.net/jiandan1127/article/details/81205530
+>1. 根目录下右键："git Bash Here" 进入bash命令窗口
+>2. 输入 vim .gitignore命令，打开文件（没有文件会自动创建）
+>3. 按i键进入编辑状态，输入规则，例如node_modules/，然后按Esc按键退出编辑，输入:wq保存退出
+>4. 可包含下面的文件：
+````js
+.DS_Store
+node_modules/
+dist/
+npm-debug.log
+````
+
 #### 参考网址： https://www.cnblogs.com/qweeewy/p/10110163.html
 > 1. **git init**     在本地的当前目录里初始化git仓库
 > 2. **git clone origin**     从origin位置克隆代码到本地
