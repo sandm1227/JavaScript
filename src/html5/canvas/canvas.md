@@ -68,7 +68,7 @@ if(canvas.getContext) { // 检查浏览器的支持性
 >2. 然后，你使用画图命令去画出路径
 >3. 之后把路径封闭
 >4. 一旦路径生成，你就能通过描边或填充路径区域来渲染图形
->5. 使用效果见 [canvas-example-one](https://github.com/sandm1227/JavaScript/blob/master/src/html5/
+>5. 使用效果见 [canvas-example-one](https://github.com/sandm1227/JavaScript/blob/master/src/html5/canvas/canvas-example-one.md)
 * beginPath()
 > 表示开始一个路径
 * closePath()
