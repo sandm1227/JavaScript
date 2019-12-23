@@ -85,7 +85,7 @@ if(canvas.getContext) { // 检查浏览器的支持性
 * lineTo(x, y)
 > 绘制直线的方法, x,y代表坐标系中直线结束点
 * arc(x, y, redius, startAngle, endAngle, anticlockwise)
-> 1. 画一个圆形，以(x, y)为圆心，以redius为半径，从startAngle开始到endAngle结束，按照anticlockwise给定的方向（默认为顺时针）来生成
+> 1. 绘制圆弧或者圆。画一个圆形，以(x, y)为圆心，以redius为半径，从startAngle开始到endAngle结束，按照anticlockwise给定的方向（默认为顺时针）来生成
 > 2. startAngle以及endAngle参数用弧度定义了开始以及结束的弧度。
 > 3. anticlockwise === true 逆时针；否则是顺时针
 > 4. arc()函数中表示角的单位是弧度，不是角度。角度与弧度的计算公式：弧度 = (Math.PI/180) * 角度
