@@ -23,3 +23,28 @@
     </body>
 </html>
 ````
+>2. 绘制矩形三个方法fillRect(x, y, width, height)、strokeRect(x, y, width, height)、clearRect(x, y, width, height) 的使用
+````html
+<html>
+    <head>
+        <script type="text/javascript">
+            function draw() {
+                var canvas = document.getElementById('canvas-example-one');
+                if(canvas.getContext){
+                    var ctx = canvas.getContext('2d');
+
+                    ctx.fillRect(25, 25, 100, 100);
+                    ctx.clearRect(45, 45, 60, 60);
+                    ctx.strokeRect(50, 50, 50, 50);
+                }
+            }
+        </script>
+        <style type="text/css">
+            canvas { border: 1px solid #f00 }
+        </style>
+    </head>
+    <body onload="draw();">
+        <canvas id="canvas-example-one" width="150" height="150"></canvas>
+    </body>
+</html>
+````
