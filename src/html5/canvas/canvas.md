@@ -54,6 +54,7 @@ if(canvas.getContext) { // 检查浏览器的支持性
 
 #### 绘制不同图形的方法API
 >1. canvas的原点为左上角(0,0)
+>2. 使用效果见 [canvas-example-one](https://github.com/sandm1227/JavaScript/blob/master/src/html5/canvas/canvas-example-one.md)
 ##### 绘制矩形
 * fillRect(x, y, width, height)
 > 绘制一个填充矩形
