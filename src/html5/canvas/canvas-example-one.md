@@ -23,6 +23,7 @@
     </body>
 </html>
 ````
+[img-one](https://github.com/sandm1227/JavaScript/blob/master/src/html5/canvas/assets/canvas-example-one1.png)
 >2. 绘制矩形三个方法fillRect(x, y, width, height)、strokeRect(x, y, width, height)、clearRect(x, y, width, height) 的使用
 ````html
 <html>
