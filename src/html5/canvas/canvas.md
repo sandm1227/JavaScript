@@ -89,3 +89,6 @@ if(canvas.getContext) { // 检查浏览器的支持性
 > 2. startAngle以及endAngle参数用弧度定义了开始以及结束的弧度。
 > 3. anticlockwise === true 逆时针；否则是顺时针
 > 4. arc()函数中表示角的单位是弧度，不是角度。角度与弧度的计算公式：弧度 = (Math.PI/180) * 角度
+
+#### 二次贝塞尔曲线及三次贝塞尔曲线
+ 
